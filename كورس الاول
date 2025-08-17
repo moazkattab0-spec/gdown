@@ -1,0 +1,7 @@
+!pip install --upgrade gdown
+from google.colab import drive
+drive.mount('/content/drive')
+import gdown
+
+file_url = 'رابط الملف هنا'
+gdown.download(file_url, '/content/drive/MyDrive/Downloads/your_video.mp4', quiet=False)
